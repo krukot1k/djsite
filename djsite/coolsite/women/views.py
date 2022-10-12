@@ -12,6 +12,7 @@ from .forms import *
 from .models import *
 from .utils import *
 
+
 class WomenHome(DataMixin, ListView):
     model = Women
     template_name = 'women/index.html'
@@ -95,6 +96,7 @@ class ContactFormView(DataMixin, FormView):
 
 def pageNotFound(request, exception):
     return HttpResponseNotFound('<h1>Page not found</h1>')
+
 
 # def show_post(request, post_slug):
 #     post = get_object_or_404(Women, slug=post_slug)

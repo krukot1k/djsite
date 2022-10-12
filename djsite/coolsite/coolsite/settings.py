@@ -24,7 +24,7 @@ SECRET_KEY = 'django-insecure-zcit90_4tv3!l6t1*^fz-%()p@ww1^-3fgis(279-wir4v+356
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['0.0.0.0']
 
 # Application definition
 
@@ -120,6 +120,10 @@ STATICFILES_DIRS = []
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
 INTERNAL_IPS = [
     '127.0.0.1',
 ]
+
+
